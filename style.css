@@ -1,0 +1,108 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f8f8; /* Light neutral background */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cart-items {
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.product-name {
+    font-weight: bold; /* Roboto Bold */
+    font-size: 16px;
+}
+
+.product-price {
+    font-family: Arial, sans-serif; /* Arial for price */
+    font-size: 14px;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-button {
+    background-color: #FF5722; /* Bright orange */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.quantity-button:hover {
+    background-color: #e64a19; /* Darker shade on hover */
+}
+
+.quantity-button:active {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.quantity-input {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0 5px;
+}
+
+.checkout-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.checkout-button {
+    background-color: #FF5722; /* Accent orange color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px; /* Larger size for checkout button */
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.checkout-button:hover {
+    background-color: #e64a19; /* Darker shade on hover */
+}
+
+.checkout-button:active {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px) {
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .quantity-controls {
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
